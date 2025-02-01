@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { Footer } from 'flowbite-react';
 import './app.css';
+
 
 export default function App(){
   const [peso, setPeso] = useState ('');
@@ -47,6 +49,12 @@ export default function App(){
         </button>
       </div>
       <h2>{mensagem}</h2>
+
+      <div >
+      <Footer className='footer'>
+      <Footer.Copyright  by=" Desenvolvidor por William R." year={2025} />
+    </Footer>
+    </div>
     </div>
   )
 }
